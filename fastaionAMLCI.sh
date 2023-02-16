@@ -12,7 +12,7 @@ conda create -y --name "$ENVIRONMENT"
 conda activate "$ENVIRONMENT"
 conda install -y pip
 conda install -y ipykernel
-conda install -c fastchan fastai anaconda
+conda install -y -c fastchan fastai anaconda
 python -m ipykernel install --user --name fastaienv --display-name "$PYKERNAL"
 conda deactivate
 EOF
