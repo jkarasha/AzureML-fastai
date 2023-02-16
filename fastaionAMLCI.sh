@@ -11,6 +11,7 @@ conda create -y --name "$ENVIRONMENT"
 conda activate "$ENVIRONMENT"
 conda install -y pip
 conda install -y ipykernel
-conda install -y -c fastchan fastai anaconda
+conda install -y -c fastchan fastai
+conda install -y -c fastchan anaconda
 conda deactivate
 EOF
