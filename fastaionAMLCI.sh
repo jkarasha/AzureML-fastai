@@ -6,7 +6,6 @@ set -e
 
 sudo -u azureuser -i <<'EOF'
 
-PYKERNAL=Python(fastaienv)
 ENVIRONMENT=fastaienv 
 conda create -y --name "$ENVIRONMENT"
 conda activate "$ENVIRONMENT"
