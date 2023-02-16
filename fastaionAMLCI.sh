@@ -7,12 +7,12 @@ set -e
 sudo -u azureuser -i <<'EOF'
 
 ENVIRONMENT=fastaienv 
-conda create -y --name "$ENVIRONMENT"
+conda create -y --name "$ENVIRONMENT" python=3.10
 conda activate "$ENVIRONMENT"
 conda install -y pip
 conda install -y ipykernel
 conda install -y -c fastchan fastai
-conda install -y -c fastchan anaconda
+conda install -y -c fastchan anaconda 
 python -m ipykernel install --user --name fastaienv --display-name "Python (fastaienv)"
 conda deactivate
 EOF
