@@ -13,5 +13,6 @@ conda install -y pip
 conda install -y ipykernel
 conda install -y -c fastchan fastai
 conda install -y -c fastchan anaconda
+python -m ipykernel install --user --name fastaienv --display-name "Python (fastaienv)"
 conda deactivate
 EOF
